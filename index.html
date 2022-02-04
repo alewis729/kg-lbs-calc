@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kg-lbs calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <main>
+      <section class="main-content">
+        <h3 class="title">
+          1 kg = ~2.2 lbs <span class="title--parenthesis">(2.20462 lbs)</span>
+        </h3>
+        <div class="calc">
+          <div class="calc-input-container">
+            <input id="input-kg" type="text" class="calc__input-kg" value="1" />
+            <p class="calc-input--unit">kg</p>
+          </div>
+          <p class="calc--equal">=</p>
+          <div class="calc-input-container">
+            <input
+              id="input-lbs"
+              type="text"
+              class="calc__input-lbs"
+              value="2.20"
+            />
+            <p class="calc-input--unit">lbs</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
