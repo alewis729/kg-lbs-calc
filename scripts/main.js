@@ -15,8 +15,17 @@ const calculate = ({ value, isKg = false }) => {
 };
 
 const adjustInputWidths = () => {
-  inputKg.style.width = `calc(${inputKg.value.length}ch + 5px)`;
-  inputLbs.style.width = `calc(${inputLbs.value.length}ch + 5px)`;
+  let kgLen = inputKg.value.length;
+  let lbsLen = inputLbs.value.length;
+
+  if (kgLen === 0) {
+    kgLen = 1;
+  }
+  if (lbsLen === 0) {
+    lbsLen = 1;
+  }
+  inputKg.style.width = `calc(${kgLen}ch + 5px)`;
+  inputLbs.style.width = `calc(${lbsLen}ch + 5px)`;
 };
 
 const handleInputChange = (value, isKg, inputNode, inputOtherUnitNode) => {
