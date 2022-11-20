@@ -25,7 +25,10 @@
             <input
               id="input-kg"
               type="number"
+              pattern="\d*"
+              inputmode="decimal"
               class="calc__input-kg"
+              onClick="this.select();"
               value="1"
             />
             <p class="calc-input--unit">kg</p>
@@ -35,7 +38,10 @@
             <input
               id="input-lbs"
               type="number"
+              pattern="\d*"
+              inputmode="decimal"
               class="calc__input-lbs"
+              onClick="this.select();"
               value="2.20"
             />
             <p class="calc-input--unit">lbs</p>
