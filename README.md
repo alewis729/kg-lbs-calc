@@ -1,1 +1,1 @@
-## App to calculate kg-lbs
+## Converts kg to lbs and vice versa
